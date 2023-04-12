@@ -17,9 +17,3 @@ jobs:
       with:
         creds:
           $ {{ secrets.AZURE_CREDENTIALS }}
-    - name: SplitSteps
-    - run: |
-        echo Test2
-        #terraform init
-        #terraform plan
-        #terraform apply -auto-approve
