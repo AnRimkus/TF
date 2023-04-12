@@ -9,10 +9,10 @@ jobs:
         echo Test
     - uses: actions/checkout@v2.7.0
     - name: Install Terraform
-    - uses: little-core-labs/install-terraform@v2.0.0
+      uses: little-core-labs/install-terraform@v2.0.0
       with:
           version: 1.4.4
-    #- name: Terraform apply
-    #- uses: azure/login@v1
-    #  with:
-    #    creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Terraform apply
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
