@@ -2,7 +2,8 @@ on:
   pull_request:
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - run:
-      echo PR check
+  Test:
+    runs-on: ubuntu-latest 
+    steps:
+      - run: |
+          echo Test
